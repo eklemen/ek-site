@@ -37,6 +37,14 @@ $(function() {
         	  'Your message has been sent! I will get back to you shortly.',
         	  'success'
         	)
+        }).fail(function(err){
+        	e.preventDefault();
+        	$('form')[0].reset();
+        	swal(
+        	  'Oops!',
+        	  'It looks like something went wrong. Try again later or send a message directly to <a href="mailto:ejklemen@gmail.com">ejklemen@gmail.com</a>',
+        	  'error'
+        	)
         });
         return false;
 	});

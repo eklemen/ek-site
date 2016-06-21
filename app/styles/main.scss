@@ -73,6 +73,10 @@ body {
 }
 body{
   text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5{
+  font-family: 'Droid Serif', serif;
 }
 
 h3{
@@ -87,9 +91,17 @@ h3{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: cornflowerblue;
+  background-image: url("../images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   .heading{
+    align-self: flex-end;
+    color: #ddd;
     padding-top: 30px;
+    h1{
+      font-size: 70px;
+    }
     .profile-img{
       border-radius: 50%;
     }
@@ -103,6 +115,21 @@ h3{
     min-height: 400px;
     p{
       font-size: 18px;
+    }
+    .personal-links{
+      margin-top: 30px;
+      div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        span{
+          font-size: 16px;
+        }
+        &.mail{
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+      
     }
   }
   #projects{
