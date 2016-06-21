@@ -33,9 +33,11 @@
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
-            </button>
+            <div class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <div class="hamburger-menu">
+                <div class="bar"></div> 
+              </div>
+            </div>
             <a class="navbar-brand" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span>Evan Klemen</a>
           </div>
           <div class="navbar-collapse collapse pull-right">
@@ -67,41 +69,52 @@
 
       <section id="projects">
         <h3>Recent Projects</h3>
-        <div class="col-sm-6 col-md-4 project-item">
-          <h4>Dazzling Deco</h4>
-          <div class="thumbnail">
-            <a target="_blank" href="http://dazzlingdeco.com">
-              <img class="" src="images/dd.png" alt="Dazzling Deco">  
-            </a>
+        <div class="row project-item">
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <a target="_blank" href="http://dazzlingdeco.com">
+                <img class="" src="images/dd.png" alt="Dazzling Deco">  
+              </a>
+            </div>
           </div>
-          
-          <p>Simple single page app using Angular1 and Angular Material to showcase the clients products. This site is hosted via AWS S3 using Route53. This is an ongoing project which will include an order page and detailed product store.</p>
-          <p><a target="_blank" href="http://dazzlingdeco.com">dazzlingdeco.com</a></p>
-          <p>Angular1 &bull; Angular Material &bull; Sass &bull; AWS S3 &bull; AWS Route53 &bull; Mobile and Responsive &bull; HTML5</p>
+          <div class="col-sm-6">
+            <h4>Dazzling Deco</h4>
+            <p>Simple single page app using Angular1 and Angular Material to showcase the clients products. This site is hosted via AWS S3 using Route53. This is an ongoing project which will include an order page and detailed product store.</p>
+            <p><a target="_blank" href="http://dazzlingdeco.com">dazzlingdeco.com</a></p>
+            <p>Angular1 &bull; Angular Material &bull; Sass &bull; AWS S3 &bull; AWS Route53 &bull; Mobile and Responsive &bull; HTML5</p>
+          </div>
         </div>
 
-        <div class="col-sm-6 col-md-4 project-item">
-          <h4>Zenit Service</h4>
-          <div class="thumbnail">
-            <a target="_blank" href="http://zenitservice.com">
-              <img class="" src="images/zenit.png" alt="Zenit Service">
-            </a>
+        <div class="row project-item">
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <a target="_blank" href="http://zenitservice.com">
+                <img class="" src="images/zenit.png" alt="Zenit Service">
+              </a>
+            </div>
           </div>
-          <p>This site also was built using Angular1 and Angular Material.</p>
-          <p><a target="_blank" href="http://zenitservice.com">zenitservice.com</a></p>
-          <p>Angular1 &bull; Angular Material &bull; Sass &bull; Google Maps &bull; Mobile and Responsive &bull; HTML5</p>
+          <div class="col-sm-6">
+            <h4>Zenit Service</h4>
+            <p>This site also was built using Angular1 and Angular Material.</p>
+            <p><a target="_blank" href="http://zenitservice.com">zenitservice.com</a></p>
+            <p>Angular1 &bull; Angular Material &bull; Sass &bull; Google Maps &bull; Mobile and Responsive &bull; HTML5</p>
+          </div>
         </div>  
 
-        <div class="col-sm-6 col-md-4 project-item">
-          <h4>Study Buddy</h4>
-          <div class="thumbnail">
-            <a target="_blank" href="https://study-buddy.firebaseapp.com/#/">
-              <img class="" src="images/studybuddy.png" alt="Study Buddy">
-            </a>     
+        <div class="row project-item">
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <a target="_blank" href="https://study-buddy.firebaseapp.com/#/">
+                <img class="" src="images/studybuddy.png" alt="Study Buddy">
+              </a>     
+            </div>
           </div>
-          <p>Study Buddy was my final project at The Iron Yard. Once signed in, you can search for groups at UCF who are studying the same topics and join forces to pass your classes. Users can also creat their own group if one is not found.</p>
-          <p><a target="_blank" href="https://study-buddy.firebaseapp.com/#/">study-buddy.firebaseapp.com</a></p>
-          <p>Angular1 &bull; UI Bootstrap &bull; Sass &bull; Firebase &bull; AngularFire &bull; Mobile and Responsive &bull; HTML5 &bull; Facebook Authentication</p>
+          <div class="col-sm-6">
+            <h4>Study Buddy</h4>
+            <p>Study Buddy was my final project at The Iron Yard. Once signed in, you can search for groups at UCF who are studying the same topics and join forces to pass your classes. Users can also create their own group if one is not found.</p>
+            <p><a target="_blank" href="https://study-buddy.firebaseapp.com/#/">study-buddy.firebaseapp.com</a></p>
+            <p>Angular1 &bull; UI Bootstrap &bull; Sass &bull; Firebase &bull; AngularFire &bull; Mobile and Responsive &bull; HTML5 &bull; Facebook Authentication</p>
+          </div>
         </div>  
       </section>
       
