@@ -15,6 +15,7 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
@@ -23,7 +24,7 @@
     <!-- endbuild -->
   </head>
 
-  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  <body data-spy="scroll" data-offset="50" data-target="#navbar-main">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->  
@@ -45,6 +46,7 @@
               <li> <a data-scroll href="#home">Home</a></li>
               <li> <a data-scroll href="#about">About</a></li>
               <li> <a data-scroll href="#projects">Projects</a></li>
+              <li> <a data-scroll href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -62,7 +64,7 @@
       <section id="about">
         <div>
           <h3>About Me</h3>
-          <p>In early 2015 I changed my career path and began learning web development. I attended The Iron Yard bootcamp here in Orlando, a crash course for learning javascript and how to craft the web, and I couldn't be happier with my decision. I like building projects on the side to learn new technologies, libraries and frameworks.</p>
+          <p>In early 2015, I changed my career path and began learning web development. I couldn't be happier with my decision to attend The Iron Yard bootcamp in Orlando, a crash course for learning javascript and how to craft the web. I enjoy building projects on the side, attending hackathons and meetups, and trying new technologies out of my comfort zone.</p>
           
         </div>
       </section>
@@ -70,52 +72,74 @@
       <section id="projects">
         <h3>Recent Projects</h3>
         <div class="row project-item">
-          <div class="col-sm-6">
+          <div class="col-sm-6 image-container col-xs-12">
             <div class="thumbnail">
               <a target="_blank" href="http://dazzlingdeco.com">
                 <img class="" src="images/dd.png" alt="Dazzling Deco">  
               </a>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 text">
             <h4>Dazzling Deco</h4>
             <p>Simple single page app using Angular1 and Angular Material to showcase the clients products. This site is hosted via AWS S3 using Route53. This is an ongoing project which will include an order page and detailed product store.</p>
             <p><a target="_blank" href="http://dazzlingdeco.com">dazzlingdeco.com</a></p>
-            <p>Angular1 &bull; Angular Material &bull; Sass &bull; AWS S3 &bull; AWS Route53 &bull; Mobile and Responsive &bull; HTML5</p>
+            <p><em>Angular1 &bull; Angular Material &bull; Sass &bull; AWS S3 &bull; AWS Route53 &bull; Mobile and Responsive &bull; HTML5</em></p>
           </div>
         </div>
 
         <div class="row project-item">
-          <div class="col-sm-6">
+          <div class="col-sm-6 image-container col-xs-12">
             <div class="thumbnail">
               <a target="_blank" href="http://zenitservice.com">
                 <img class="" src="images/zenit.png" alt="Zenit Service">
               </a>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 text">
             <h4>Zenit Service</h4>
             <p>This site also was built using Angular1 and Angular Material.</p>
             <p><a target="_blank" href="http://zenitservice.com">zenitservice.com</a></p>
-            <p>Angular1 &bull; Angular Material &bull; Sass &bull; Google Maps &bull; Mobile and Responsive &bull; HTML5</p>
+            <p><em>Angular1 &bull; Angular Material &bull; Sass &bull; Google Maps &bull; Mobile and Responsive &bull; HTML5</em></p>
           </div>
         </div>  
 
         <div class="row project-item">
-          <div class="col-sm-6">
+          <div class="col-sm-6 image-container col-xs-12">
             <div class="thumbnail">
               <a target="_blank" href="https://study-buddy.firebaseapp.com/#/">
                 <img class="" src="images/studybuddy.png" alt="Study Buddy">
               </a>     
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 text">
             <h4>Study Buddy</h4>
             <p>Study Buddy was my final project at The Iron Yard. Once signed in, you can search for groups at UCF who are studying the same topics and join forces to pass your classes. Users can also create their own group if one is not found.</p>
             <p><a target="_blank" href="https://study-buddy.firebaseapp.com/#/">study-buddy.firebaseapp.com</a></p>
-            <p>Angular1 &bull; UI Bootstrap &bull; Sass &bull; Firebase &bull; AngularFire &bull; Mobile and Responsive &bull; HTML5 &bull; Facebook Authentication</p>
+            <p><em>Angular1 &bull; UI Bootstrap &bull; Sass &bull; Firebase &bull; AngularFire &bull; Mobile and Responsive &bull; HTML5 &bull; Facebook Authentication</em></p>
           </div>
         </div>  
+      </section>
+
+      <section id="contact">
+        <h3>Contact Me</h3>
+        <div class="col-sm-8 col-sm-offset-2">
+          <form method="POST">
+              <input type="text" name="_gotcha" style="display:none" />
+              <input type="hidden" name="_next" value="/#contact" />
+              <div class="input-group">
+                <input type="text" name="name" class="form-control" placeholder="Name" aria-describedby="Name field">
+              </div>
+              <div class="input-group">
+                <input type="text" name="_replyto" class="form-control" placeholder="Email" aria-describedby="Email field">
+              </div>
+              <div class="input-group">
+                <textarea type="text" name="body" class="form-control" placeholder="Message..." aria-describedby="Message body"></textarea> 
+              </div>
+
+              <button class="btn col-sm-6 col-sm-offset-3" type="submit">Send</button>
+          </form>
+        </div>
+        
       </section>
       
     </div>
@@ -133,6 +157,10 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
+    <script src="bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+    <!-- for IE support -->
+    <script src="bower_components/es6-promise/promise.min.js"></script>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -149,7 +177,7 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
