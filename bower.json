@@ -4,7 +4,9 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
-    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#^9.1.4"
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#^9.1.4",
+    "sweetalert2": "^6.6.2",
+    "es6-promise": "^4.0.5"
   },
   "overrides": {
     "bootstrap-sass": {

@@ -11,7 +11,8 @@ $(function() {
 		$('.bar').toggleClass('animate');
 	});
 
-	$('form').attr("action", "https://formspree.io/ejklemen@gmail.com");
+
+	$('form').attr('action', 'https://formspree.io/ejklemen@gmail.com');
 	$('form').submit(function(e){
 		e.preventDefault();
 		$('form').serialize();
@@ -21,11 +22,11 @@ $(function() {
 			'body'  : $('textarea[name=body]').val()
 		};
 		$.ajax({
-			url: "https://formspree.io/ejklemen@gmail.com", 
-			method: "POST",
+			url: 'https://formspree.io/ejklemen@gmail.com', 
+			method: 'POST',
 			// accepts: 'application/json',
 			data: formData,
-			dataType: "json"
+			dataType: 'json'
 		}).done(function(data){
 			e.preventDefault();
 			$('form')[0].reset();
