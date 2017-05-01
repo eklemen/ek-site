@@ -238,6 +238,7 @@
                     'success'
             );
           }).fail(function(err){
+            console.log(err);
             e.preventDefault();
             console.log(err);
             $('form')[0].reset();
